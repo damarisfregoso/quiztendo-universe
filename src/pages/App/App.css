@@ -1,3 +1,7 @@
+body {
+  background-color: black;
+}
+
 .App {
   text-align: center;
 }
@@ -36,3 +40,25 @@
     transform: rotate(360deg);
   }
 }
+
+.form-container {
+  background-color: rgb(56, 192, 95);
+  border: rgb(103, 66, 213) solid 3px;
+}
+
+.form-container label {
+  color: rgb(103, 66, 213);
+}
+
+.form-container input {
+  background-color: black;
+  color: rgb(103, 66, 213);
+  font-family: 'New Super Mario Font U', sans-serif;
+  border: rgb(103, 66, 213) solid 3px;
+}
+
+.form-container button {
+  color: rgb(103, 66, 213);
+  background-color: black;
+}
+

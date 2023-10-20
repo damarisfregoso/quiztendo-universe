@@ -1,0 +1,24 @@
+.NavBar {
+  font-family: 'New Super Mario Font U', sans-serif;
+  color: red;
+  display: flex;
+  justify-content: end;
+}
+
+.NavBar a {
+  font-family: 'New Super Mario Font U', sans-serif;
+  color: red;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.NavBar span {
+  font-size: 25px;
+}
+
+.NavBar a:hover {
+  font-family: 'New Super Mario Font U', sans-serif;
+  color: red;
+  text-decoration: none;
+}
+

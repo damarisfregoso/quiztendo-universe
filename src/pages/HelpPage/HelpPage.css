@@ -1,0 +1,20 @@
+.HelpPage {
+  font-family: 'New Super Mario Font U', sans-serif;
+}
+
+.HelpPage h1{
+  font-size: 60px;
+  color: rgb(103, 66, 213);
+}
+
+.HelpPage ol{
+  flex-direction: column;
+  text-align: center;
+  list-style-position: inside;
+  font-size: 40px;
+  color: rgb(56, 192, 95);
+}
+
+.HelpPage li {
+  padding: 15px;
+}
