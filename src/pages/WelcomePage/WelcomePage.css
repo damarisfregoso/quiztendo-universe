@@ -1,8 +1,45 @@
 .WelcomePage {
   font-family: 'New Super Mario Font U', sans-serif;
+  text-align: center;
 }
 
 .WelcomePage h1{
   color: red;
   font-size: 80px;
+  -webkit-text-stroke: 0.5px rgb(56, 192, 95);
+}
+
+.WelcomePage h2{
+  color: red;
+  font-size: 40px;
+  -webkit-text-stroke: 0.5px rgb(56, 192, 95);
+}
+
+.WelcomePage img{
+  height: 200px;
+}
+
+.WelcomePage h3 {
+  color: rgb(103, 66, 213);
+  font-size: 38px;
+}
+
+.select-characters {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.single-characters {
+  margin: 50px;
+}
+
+.single-characters:hover {
+  -webkit-text-stroke: 0.4px white;
+  cursor: pointer;
+}
+
+.select-characters a{
+  text-decoration: none;
 }

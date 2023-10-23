@@ -16,7 +16,15 @@ const userSchema = new Schema({
   password: {
     type: String,
     required: true
-  }
+  },
+  currentQuiz: { type: Schema.Types.ObjectId, ref: 'Quiz' },
+  quizProgress: [
+    {
+      quiz: { type: Schema.Types.ObjectId, ref: 'Quiz' },
+      currentQuestionIndex: { type: Number, default: 0 },
+      score: { type: Number, default: 0 },
+    },
+  ],
 }, {
   timestamps: true,
   toJSON: {

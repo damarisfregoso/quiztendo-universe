@@ -5,6 +5,7 @@
 
 .AuthPage h1 {
   font-size: 80px;
+  -webkit-text-stroke: 0.5px rgb(56, 192, 95);
 }
 
 .AuthPage h2 {
