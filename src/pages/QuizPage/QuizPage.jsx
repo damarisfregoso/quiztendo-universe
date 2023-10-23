@@ -1,14 +1,12 @@
+import './QuizPage.css';
 import { useParams } from "react-router-dom";
-import './QuizPage.css'
 
-export default function QuizPage({ chars }) {
+export default function QuizPage() {
   const { character } = useParams();
-  const selectedCharacter = chars.find((char) => char.name === character);
 
   return (
     <div className="QuizPage">
-      <h1>{ character }</h1>
-      {selectedCharacter && (<img src={selectedCharacter.image} alt={selectedCharacter.name}/>)}
+      <h1>{character}'s Quiz</h1>
     </div>
-  )
+  );
 }

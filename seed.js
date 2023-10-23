@@ -7,7 +7,7 @@ const Quiz = require('./models/quiz');
   await Quiz.deleteMany({});
   const quizzes = await Quiz.create([
     {
-      title: 'Luigi Quiz',
+      title: 'Luigi Quiz 1',
       character: 'Luigi',
       questions: [
         {
@@ -53,6 +53,57 @@ const Quiz = require('./models/quiz');
             { choiceText: 'Fireball', isCorrect: false },
             { choiceText: 'Super Jump Punch', isCorrect: true },
             { choiceText: 'Cyclone Spin', isCorrect: false },
+          ],
+        },
+      ],
+    },
+    {
+      title: 'Luigi Quiz 2',
+      character: 'Luigi',
+      questions: [
+        {
+          prompt: "In Luigi's Mansion, what is the name of the professor who equips Luigi with a Poltergust and helps him capture ghosts?",
+          choices: [
+            { choiceText: 'Professor E. Gadd', isCorrect: true },
+            { choiceText: 'Dr. Mario', isCorrect: false },
+            { choiceText: 'Professor Toad', isCorrect: false },
+            { choiceText: 'Professor Koopa', isCorrect: false },
+          ],
+        },
+        {
+          prompt: "Luigi is known for being easily frightened. What does he typically exclaim when he's scared in the games?",
+          choices: [
+            { choiceText: "It's-a me, Luigi!", isCorrect: false },
+            { choiceText: "Mamma mia!", isCorrect: false },
+            { choiceText: "Let's-a go!", isCorrect: false },
+            { choiceText: "I-I-I-I'm-a Luigi!", isCorrect: true },
+          ],
+        },
+        {
+          prompt: "In the game 'Luigi's Mansion,' what is the name of Luigi's rescue target, whom he needs to save from ghosts?",
+          choices: [
+            { choiceText: 'Daisy', isCorrect: false },
+            { choiceText: 'Rosalina', isCorrect: false },
+            { choiceText: 'Peach', isCorrect: true },
+            { choiceText: 'Mario', isCorrect: false },
+          ],
+        },
+        {
+          prompt: "What is the name of Luigi's haunted, ghost-filled mansion that he inherits in the game 'Luigi's Mansion'?",
+          choices: [
+            { choiceText: 'Ghostly Manor', isCorrect: false },
+            { choiceText: 'Haunted House', isCorrect: true },
+            { choiceText: "Luigi's Castle", isCorrect: false },
+            { choiceText: 'The Last Resort', isCorrect: false },
+          ],
+        },
+        {
+          prompt: "In 'Super Mario Bros. 2,' Luigi is known for his unique ability. What can Luigi do that Mario and others can't?",
+          choices: [
+            { choiceText: 'Fly', isCorrect: false },
+            { choiceText: 'Shoot fireballs', isCorrect: false },
+            { choiceText: 'Run faster', isCorrect: false },
+            { choiceText: 'Jump higher', isCorrect: true },
           ],
         },
       ],
