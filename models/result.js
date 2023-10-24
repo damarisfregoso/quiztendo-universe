@@ -24,3 +24,23 @@ const resultSchema = mongoose.Schema({
   ]
 });
 
+resultSchema.virtual('numCorrect').get(function() {
+  return this.answers.filter((answer) => answer.correct).length;
+});
+
+resultSchema.virtual('numAnswered').get(function() {
+  return this.answers.length;
+});
+
+resultSchema.virtual('score').get(function() {
+  const numCorrect = this.numCorrect;
+  const numAnswered = this.numAnswered;
+
+  if (numAnswered === 0) {
+    return 0; // Avoid division by zero
+  }
+
+  return (numCorrect / numAnswered) * 100;
+});
+
+module.exports = mongoose.model('Result', resultSchema);
