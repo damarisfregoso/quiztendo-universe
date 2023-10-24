@@ -1,9 +1,7 @@
 import { Link } from 'react-router-dom';
 import './WelcomePage.css'
-import SelectQuiz from './SelectQuiz'
 
-export default function WelcomePage({ user, characters, quizzes }) {
-  const [selectedCharacter, setSelectedCharacter] = useState(null);
+export default function WelcomePage({ user, characters }) {
   return (
     <div className='WelcomePage'>
       <h1>Welcome {user.name} </h1>

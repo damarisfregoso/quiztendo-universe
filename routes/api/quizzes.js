@@ -3,6 +3,6 @@ const router = express.Router();
 const quizzesCtrl = require('../../controllers/api/quizzes');
 
 //GET /api/quizzes
-router.get('/:character', quizzesCtrl.getQuizzesForChars);
+router.get('/', quizzesCtrl.getAll);
 
 module.exports = router;

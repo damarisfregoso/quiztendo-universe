@@ -1,11 +1,10 @@
 const Quiz = require('../../models/quiz');
 
 module.exports = {
-  getQuizzesForChars
+  getAll
 }
 
-async function getQuizzesForChars(res, req) {
-  const character = req.params.character;
-  const quizzes = await Quiz.find({ character: character});
+async function getAll(req, res) {
+  const quizzes = await Quiz.find({});
   res.json(quizzes);
 }

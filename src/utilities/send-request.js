@@ -17,6 +17,13 @@ export default async function sendRequest(url, method = 'GET', payload = null) {
 
   const res = await fetch(url, options)
   //res.ok will be false if the status code is not in 2xx range
-  if (res.ok) return res.json();
-  throw new Error('Bad Request');
+  if (res.ok) { 
+    return res.json();
+  } else {
+    console.error('API Response Status:', res.status);
+    console.error('API Response Text:', await res.text()); 
+    throw new Error('Bad Request');
+  }
 }
+const token = getToken();
+console.log('Token:', token);
