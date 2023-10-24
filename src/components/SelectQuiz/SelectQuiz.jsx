@@ -2,9 +2,9 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './SelectQuiz.css'
 
-export default function SelectQuiz({ quizzes, character, onStartQuiz }) {
+export default function SelectQuiz({ quizzes, character }) {
   const navigate = useNavigate();
-  const [selectedQuiz, setSelectedQuiz] = useState('');
+  const [selectedQuiz, setSelectedQuiz] = useState(null);
 
   const handleStartQuiz = () => {
     // Call the onStartQuiz function and pass the selectedQuiz to start the quiz
@@ -19,7 +19,7 @@ export default function SelectQuiz({ quizzes, character, onStartQuiz }) {
         {quizzes
           .filter((quiz) => quiz.character === character)
           .map((quiz) => (
-            <option key={quiz.id} value={quiz.id}>
+            <option key={quiz._id} value={quiz._id}>
               {quiz.title}
             </option>
             ))

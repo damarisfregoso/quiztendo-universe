@@ -1,34 +1,33 @@
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import * as quizzesAPI from '../../utilities/quizzes-api';
+import * as resultsAPI from '../../utilities/results-api';
 import './QuizPage.css';
 
-export default function QuizPage({ quizzes }) {
+export default function QuizPage() {
   const { quizId } = useParams();
-  const [quiz, setQuiz] = useState(null); 
+  const [quizResult, setQuizResult] = useState(null);
 
+  const curQuestion = quizResult?.quiz.questions[quizResult?.answers.length];
+  console.log(curQuestion);
   useEffect(function () {
-    async function getQuiz() {
+    async function getQuizResult() {
       try {
-        const fetchedQuiz = await quizzesAPI.getOne(quizId);
-        if (fetchedQuiz) {
-          setQuiz(fetchedQuiz)
-        }
+        const fetchedQuizResult = await resultsAPI.getForQuiz(quizId);
+        setQuizResult(fetchedQuizResult)
       } catch (error) {
         console.error('Error fetching quiz:', error);
       }
     }
-    getQuiz();
+    getQuizResult();
   }, [quizId]);
 
+  // Nothing to render if waiting on quizResult
+  if (!quizResult) return null;
+
   return (
-    <div className="QuizPage">
-      {quiz ? (
-        <h1>{quiz.title}</h1>
-        // Render other quiz content here
-      ) : (
-        <h1>Loading...</h1>
-      )}
-    </div>
+    <section className="QuizPage">
+      <h2>{quizResult.quiz.title}</h2>
+      //render <QuestionDisplay question={curQuestion} />
+    </section>
   );
 }

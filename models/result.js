@@ -11,9 +11,10 @@ const resultSchema = mongoose.Schema({
     type: Schema.Types.ObjectId,
     ref: 'Quiz',
     required: true,
-  }, inProgress: {
+  }, 
+  inProgress: {
     type: Boolean, 
-    required: true,
+    default: true,
   }, 
   answers: [
     {
@@ -42,5 +43,18 @@ resultSchema.virtual('score').get(function() {
 
   return (numCorrect / numAnswered) * 100;
 });
+
+resultSchema.statics.getForQuiz = function(userId, quizId) {
+  // 'this' is bound to the model (don't use an arrow function)
+  // return the promise that resolves to a result 
+  return this.findOneAndUpdate(
+    // query
+    { user: userId, inProgress: true, quiz: quizId },
+    // update - in the case the order (cart) is upserted
+    { user: userId, quiz: quizId },
+    // upsert option creates the doc if it doesn't exist!
+    { upsert: true, new: true }
+  ).populate('quiz');
+};
 
 module.exports = mongoose.model('Result', resultSchema);

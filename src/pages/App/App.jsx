@@ -13,7 +13,7 @@ import './App.css';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
-  const [quizzes, setQuizzes] = useState(null);
+  const [quizzes, setQuizzes] = useState([]);
 
   useEffect(() => {
     // Fetch quiz data using an async function
@@ -37,7 +37,7 @@ export default function App() {
               {/* Route components in here */}
               <Route path="/" element={<WelcomePage user={user} characters={characters} quizzes={quizzes}/>} />
               <Route path="/help" element={<HelpPage />} />
-              <Route path="/quiz/:quizId" element={<QuizPage quizzes={quizzes}/>} />
+              <Route path="/quiz/:quizId" element={<QuizPage />} />
               <Route path="/start/:character" element={<StartQuizPage chars={characters} quizzes={quizzes}/>} />
             </Routes>
           </>

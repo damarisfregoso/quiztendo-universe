@@ -27,6 +27,7 @@ app.use('/api/users', require('./routes/api/users'));
 //Protect all routes below from anonymous users
 const ensureLoggedIn = require('./config/ensureLoggedIn');
 app.use('/api/quizzes', ensureLoggedIn, require('./routes/api/quizzes'));
+app.use('/api/results', ensureLoggedIn, require('./routes/api/results'));
 
 // The following "catch all" route (note the *) is necessary
 // to return the index.html on all non-AJAX/API requests
