@@ -37,7 +37,7 @@ export default function App() {
               {/* Route components in here */}
               <Route path="/" element={<WelcomePage user={user} characters={characters} quizzes={quizzes}/>} />
               <Route path="/help" element={<HelpPage />} />
-              <Route path="/quiz/:quizId" element={<QuizPage />} />
+              <Route path="/quiz/:quizId" element={<QuizPage quizzes={quizzes}/>} />
               <Route path="/start/:character" element={<StartQuizPage chars={characters} quizzes={quizzes}/>} />
             </Routes>
           </>

@@ -1,11 +1,14 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import './SelectQuiz.css'
 
 export default function SelectQuiz({ quizzes, character, onStartQuiz }) {
+  const navigate = useNavigate();
   const [selectedQuiz, setSelectedQuiz] = useState('');
 
-  const handleStartQuiz = (selectedQuiz) => {
+  const handleStartQuiz = () => {
     // Call the onStartQuiz function and pass the selectedQuiz to start the quiz
-    onStartQuiz(selectedQuiz);
+    navigate(`/quiz/${selectedQuiz}`);
   };
 
   return (
@@ -13,13 +16,12 @@ export default function SelectQuiz({ quizzes, character, onStartQuiz }) {
       <h2>Select a Quiz for {character}</h2>
         <select value={selectedQuiz} onChange={(e) => setSelectedQuiz(e.target.value)}>
         <option value="">Select a Quiz</option>
-        {quizzes && quizzes.length > 0 && 
-          quizzes
-            .filter((quiz) => quiz.character === character)
-            .map((quiz) => (
-              <option key={quiz.id} value={quiz.id}>
-                {quiz.title}
-              </option>
+        {quizzes
+          .filter((quiz) => quiz.character === character)
+          .map((quiz) => (
+            <option key={quiz.id} value={quiz.id}>
+              {quiz.title}
+            </option>
             ))
         }
       </select>
