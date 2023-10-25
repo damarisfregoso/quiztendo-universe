@@ -2,7 +2,7 @@
   font-family: 'New Super Mario Font U', sans-serif;
   color: red;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
 }
 
