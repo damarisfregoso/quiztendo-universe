@@ -8,7 +8,6 @@ import './QuizPage.css';
 export default function QuizPage() {
   const { quizId } = useParams();
   const [quizResult, setQuizResult] = useState(null);
-  const [showFinalResult, setFinalResult] = useState(false);
   const curQuestion = quizResult?.quiz.questions[quizResult?.answers.length];
   // console.log(curQuestion);
   const score = quizResult?.score
@@ -28,14 +27,19 @@ export default function QuizPage() {
   // Nothing to render if waiting on quizResult
   if (!quizResult) return null;
 
+  async function handleChoice(choiceId) {
+    const updatedQuizResult = await resultsAPI.makeChoice(quizResult._id, choiceId);
+    setQuizResult(updatedQuizResult);
+  }
+
   return (
     <section className="QuizPage">
       <h1>{quizResult.quiz.title}</h1>
-      {showFinalResult ? 
-      <FinalResult />
+      { quizResult.inProgress ? 
+      <QuestionDisplay question={curQuestion} handleChoice={handleChoice}/>
       :
-      <QuestionDisplay question={curQuestion} score={score}/>
-      }
+      <FinalResult quizResult={quizResult}/>
+    }
     </section>
   );
 }

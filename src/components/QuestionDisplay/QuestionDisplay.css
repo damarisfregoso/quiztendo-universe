@@ -29,4 +29,9 @@
   font-size: 30px;
   margin-top: 8px;
 }
+.QuestionDisplay li:hover {
+  color: rgb(56, 192, 95);
+  background-color: white;
+  cursor: pointer;
+}
 

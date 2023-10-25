@@ -23,14 +23,13 @@ const resultSchema = mongoose.Schema({
       correct: {type: Boolean, required: true},
     }
   ]
+}, {
+  timestamps: true,
+  toJSON: {virtuals: true}
 });
 
 resultSchema.virtual('numCorrect').get(function() {
   return this.answers.filter((answer) => answer.correct).length;
-});
-
-resultSchema.virtual('numAnswered').get(function() {
-  return this.answers.length;
 });
 
 resultSchema.virtual('score').get(function() {
