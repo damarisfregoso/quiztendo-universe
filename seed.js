@@ -191,7 +191,7 @@ const Quiz = require('./models/quiz');
     },
     {
       character: 'Mario',
-      title: 'Mario Quiz 1',
+      title: 'Mario Quiz 2',
       questions: [
         {
           sequence: 1,

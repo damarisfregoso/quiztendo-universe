@@ -1,5 +1,6 @@
 .SelectQuiz {
   color: red;
+  font-family: 'New Super Mario Font U', sans-serif;
 }
 .SelectQuiz select{
   color: white;
@@ -22,6 +23,11 @@
 .SelectQuiz button:hover {
   font-family: 'New Super Mario Font U', sans-serif;
   background-color: rgb(56, 192, 95);
+  border: white solid 3px;
+  color: black;
+}
+.SelectQuiz button:disabled {
+  background-color: red;
   border: white solid 3px;
   color: black;
 }

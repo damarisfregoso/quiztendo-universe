@@ -4,7 +4,7 @@ import './SelectQuiz.css'
 
 export default function SelectQuiz({ quizzes, character }) {
   const navigate = useNavigate();
-  const [selectedQuiz, setSelectedQuiz] = useState(null);
+  const [selectedQuiz, setSelectedQuiz] = useState('');
 
   const handleStartQuiz = () => {
     // Call the onStartQuiz function and pass the selectedQuiz to start the quiz

@@ -1,14 +1,18 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import * as resultsAPI from '../../utilities/results-api';
+import QuestionDisplay from '../../components/QuestionDisplay/QuestionDisplay';
+import FinalResult from '../../components/FinalResult/FinalResult';
 import './QuizPage.css';
 
 export default function QuizPage() {
   const { quizId } = useParams();
   const [quizResult, setQuizResult] = useState(null);
-
+  const [showFinalResult, setFinalResult] = useState(false);
   const curQuestion = quizResult?.quiz.questions[quizResult?.answers.length];
-  console.log(curQuestion);
+  // console.log(curQuestion);
+  const score = quizResult?.score
+
   useEffect(function () {
     async function getQuizResult() {
       try {
@@ -26,8 +30,12 @@ export default function QuizPage() {
 
   return (
     <section className="QuizPage">
-      <h2>{quizResult.quiz.title}</h2>
-      //render <QuestionDisplay question={curQuestion} />
+      <h1>{quizResult.quiz.title}</h1>
+      {showFinalResult ? 
+      <FinalResult />
+      :
+      <QuestionDisplay question={curQuestion} score={score}/>
+      }
     </section>
   );
 }

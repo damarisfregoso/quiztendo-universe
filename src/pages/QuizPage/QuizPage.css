@@ -1,11 +1,10 @@
 .QuizPage {
   font-family: 'New Super Mario Font U', sans-serif;
-  color: red;
+
 }
 
 .QuizPage h1{
-  font-family: 'New Super Mario Font U', sans-serif;
-  color: red;
+  color: rgb(103, 66, 213);
   font-size: 80px;
   -webkit-text-stroke: 0.5px white;
 }

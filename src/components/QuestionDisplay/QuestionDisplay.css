@@ -1,0 +1,32 @@
+.QuestionDisplay {
+  background-color: rgb(56, 192, 95);
+  padding: 20px;
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: rgb(103, 66, 213) 2px solid;
+}
+
+.tracking {
+  color: white;
+  font-size: 32px;
+}
+
+.QuestionDisplay h3 {
+  font-size: 30px;
+  color: rgb(103, 66, 213);
+}
+.QuestionDisplay ul {
+  list-style: none;
+}
+
+.QuestionDisplay li {
+  padding: 16px;
+  border: 3px solid rgb(103, 66, 213);
+  color: rgb(103, 66, 213);
+  border-radius: 20px;
+  font-size: 30px;
+  margin-top: 8px;
+}
+
