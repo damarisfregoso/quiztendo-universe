@@ -377,3 +377,4 @@ const Quiz = require('./models/quiz');
   console.log(quizzes)
   process.exit();
 })();
+
