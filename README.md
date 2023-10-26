@@ -7,11 +7,11 @@
 ###### Created by Damaris Fregoso
 [![LinkedIn](https://img.shields.io/badge/Damaris-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/damaris-fregoso/) [![GitHub](https://img.shields.io/badge/Damaris-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/damarisfregoso)
 
-[Click To View]()
+[Click To View](https://quiztendo-universe-c2211e0eb2f6.herokuapp.com/)
 
 </div>
 
 <div id="body" align='center'>
 
 ## 🖨 Description 
-Quiztendo is a fun super mario bros 
+Quiztendo Universe is a fun Super Mario Bros themed quiz game.  Test your knowledge to on all sorts of different charcters, from the good guys to the bad guys with questions ranging from back in the days to current fun questions.  

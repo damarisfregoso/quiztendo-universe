@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './FinalResult.css'
 
 export default function FinalResult({ quizResult }) {
@@ -10,7 +11,7 @@ export default function FinalResult({ quizResult }) {
     <div className='FinalResult'>
       <h1>Final Results</h1>
       <h2>{numCorrect} out of {numQuestions} correct - {pctCorrect}%</h2>
-      <button>Restart Game</button>
+      <Link to='/'>Take Another Quiz</Link>
     </div>
   )
 }

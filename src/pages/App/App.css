@@ -58,14 +58,6 @@ body {
   max-width: 600px;
 }
 
-/* .form-container {
-  width: 500px; 
-  padding: 20px; 
-  background: #f0f0f0; 
-  border: 1px solid #ccc; 
-  border-radius: 5px; 
-} */
-
 .form-container label {
   color: rgb(103, 66, 213);
 }

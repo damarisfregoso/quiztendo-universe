@@ -1,0 +1,15 @@
+.LeadershipPage h1{
+  font-family: 'New Super Mario Font U', sans-serif;
+  color: red;
+  font-size: 80px;
+  -webkit-text-stroke: 0.5px rgb(56, 192, 95);
+}
+
+.LeadershipPage select{
+  color: white;
+  font-family: 'New Super Mario Font U', sans-serif;
+  background-color: rgb(56, 192, 95);
+  border-radius: 10px;
+  height: 50px;
+  font-size: 25px;
+}

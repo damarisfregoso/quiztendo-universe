@@ -25,3 +25,9 @@
   border: rgb(103, 66, 213) solid 3px;
   color: black;
 }
+
+.AuthPage button:disabled {
+  background-color: red;
+  border: white solid 3px;
+  color: black;
+}
