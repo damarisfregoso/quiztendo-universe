@@ -9,7 +9,8 @@ import QuizPage from '../QuizPage/QuizPage';
 import characters from '../../utilities/character-image';
 import StartQuizPage from '../StartQuizPage/StartQuizPage';
 import * as quizzesAPI from '../../utilities/quizzes-api'
-import LeadershipPage from '../LeadershipPage/LeadershipPage';
+import LeaderBoardPage from '../LeaderBoardPage/LeaderBoardPage';
+import MyPastQuizPage from '../MyPastQuizPage/MyPastQuizPage';
 import './App.css';
 
 export default function App() {
@@ -39,7 +40,8 @@ export default function App() {
               <Route path="/" element={<WelcomePage user={user} characters={characters} quizzes={quizzes}/>} />
               <Route path="/help" element={<HelpPage />} />
               <Route path="/quiz/:quizId" element={<QuizPage />} />
-              <Route path="/leadership" element={<LeadershipPage quizzes={quizzes} user={user} />} />
+              <Route path="/leadership" element={<LeaderBoardPage quizzes={quizzes} user={user} />} />
+              <Route path="/myquizzes" element={<MyPastQuizPage quizzes={quizzes} user={user} />} />
               <Route path="/start/:character" element={<StartQuizPage chars={characters} quizzes={quizzes}/>} />
             </Routes>
           </>

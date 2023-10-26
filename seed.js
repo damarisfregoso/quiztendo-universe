@@ -96,7 +96,7 @@ const Quiz = require('./models/quiz');
         {
           sequence: 3,
           prompt: "In the game 'Luigi's Mansion,' what is the name of Luigi's rescue target, whom he needs to save from ghosts?",
-          correctChoice: 'Peach',
+          correctChoice: 'C',
           choices: [
             { choice: 'A', prompt: 'Daisy' },
             { choice: 'B', prompt:'Rosalina' },
@@ -109,10 +109,10 @@ const Quiz = require('./models/quiz');
           prompt: "What is the name of Luigi's haunted, ghost-filled mansion that he inherits in the game 'Luigi's Mansion'?",
           correctChoice: 'B',
           choices: [
-            { choice: 'Ghostly Manor', prompt: 'Ghostly Manor' },
-            { choice: 'Haunted House', prompt: 'Haunted House' },
-            { choice: "Luigi's Castle", prompt: "Luigi's Castle" },
-            { choice: 'The Last Resort', prompt: 'The Last Resort' },
+            { choice: 'A', prompt: 'Ghostly Manor' },
+            { choice: 'B', prompt: 'Haunted House' },
+            { choice: "C", prompt: "Luigi's Castle" },
+            { choice: 'D', prompt: 'The Last Resort' },
           ],
         },
         {
@@ -120,10 +120,10 @@ const Quiz = require('./models/quiz');
           prompt: "In 'Super Mario Bros. 2,' Luigi is known for his unique ability. What can Luigi do that Mario and others can't?",
           correctChoice: 'D',
           choices: [
-            { choice: 'Fly', prompt: 'Fly' },
-            { choice: 'Shoot fireballs', prompt: 'Shoot fireballs' },
-            { choice: 'Run faster', prompt: 'Run faster' },
-            { choice: 'Jump higher', prompt: 'Jump higher' },
+            { choice: 'A', prompt: 'Fly' },
+            { choice: 'B', prompt: 'Shoot fireballs' },
+            { choice: 'C', prompt: 'Run faster' },
+            { choice: 'D', prompt: 'Jump higher' },
           ],
         },
       ],
@@ -168,12 +168,12 @@ const Quiz = require('./models/quiz');
         {
           sequence: 4,
           prompt: "Which iconic item gives Mario the ability to grow larger and break bricks when collected?",
-          correctChoice: 'Super Mushroom',
+          correctChoice: 'A',
           choices: [
-            { choice: 'Super Mushroom', prompt: 'Super Mushroom' },
-            { choice: 'Fire Flower', prompt: 'Fire Flower' },
-            { choice: '1-Up Mushroom', prompt: '1-Up Mushroom' },
-            { choice: 'Starman', prompt: 'Starman' },
+            { choice: 'A', prompt: 'Super Mushroom' },
+            { choice: 'B', prompt: 'Fire Flower' },
+            { choice: 'C', prompt: '1-Up Mushroom' },
+            { choice: 'D', prompt: 'Starman' },
           ],
         },
         {
@@ -279,7 +279,7 @@ const Quiz = require('./models/quiz');
         {
           sequence: 3,
           prompt: "In which Super Mario game does Bowser transform into different forms, such as a giant, a skeleton, and a shadow, during the final battle?",
-          correctChoice: 'Peach',
+          correctChoice: 'A',
           choices: [
             { choice: 'A', prompt: 'Super Mario 64'  },
             { choice: 'B', prompt: 'Super Mario Bros.' },
@@ -301,7 +301,7 @@ const Quiz = require('./models/quiz');
         {
           sequence: 5,
           prompt: "Who plays bowser in the 2023 Super Mario Bros. Movie?",
-          correctChoice: 'Jump higher',
+          correctChoice: 'C',
           choices: [
             { choice: 'A', prompt: 'Jack Nicholson'  },
             { choice: 'B', prompt: 'Jack Dawson' },

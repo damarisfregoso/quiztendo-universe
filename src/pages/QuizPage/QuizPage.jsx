@@ -10,7 +10,6 @@ export default function QuizPage() {
   const [quizResult, setQuizResult] = useState(null);
   const curQuestion = quizResult?.quiz.questions[quizResult?.answers.length];
   // console.log(curQuestion);
-  const score = quizResult?.score
 
   useEffect(function () {
     async function getQuizResult() {

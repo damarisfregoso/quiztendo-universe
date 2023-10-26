@@ -1,0 +1,28 @@
+.MyPastQuizPage {
+  font-family: 'New Super Mario Font U', sans-serif;
+  text-align: center;
+}
+
+.MyPastQuizPage h1{
+  color: red;
+  font-size: 80px;
+  -webkit-text-stroke: 0.5px rgb(56, 192, 95);
+}
+
+.MyPastQuizPage h3{
+  color: rgb(56, 192, 95);
+  font-size: 50px;
+  -webkit-text-stroke: 0.5px white;
+}
+
+.MyPastQuizPage .past-quiz-display{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.MyPastQuizPage p{
+  color: rgb(56, 192, 95);
+  font-size: 30px;
+  -webkit-text-stroke: 1px white;
+}

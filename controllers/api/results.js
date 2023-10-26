@@ -2,7 +2,9 @@ const Result = require('../../models/result');
 
 module.exports = {
   getForQuiz,
-  makeChoice
+  makeChoice,
+  getBestResults
+  // getLeaderBoard
 }
 
 async function getForQuiz(req, res) {
@@ -23,3 +25,32 @@ async function makeChoice(req, res) {
   await result.save();
   res.json(result);
 }
+
+async function getBestResults(req, res) {
+  // Fetch quiz results for the user
+  let results = await Result.find({ user: req.user._id, inProgress: false }).populate('quiz');
+
+  results = results.reduce(function(acc, result) {
+    const idx = acc.findIndex((r) => r.quiz._id.equals(result.quiz._id));
+    if (idx === -1) {
+      acc.push(result);
+    } else {
+      acc.splice(idx, 1, result);
+    }
+    return acc;
+  }, []);
+  console.log(results);
+
+  res.json(results);
+}
+
+
+
+// async function getLeaderBoard(req, res) {
+//   const quizId = req.params.quizId;
+//   const leaderboard = await Result.find({quiz: quizId, 'answers.corrrect': true})
+//   .populate('name', 'name')
+//   .sort({ score: -1 })
+//   .exec();
+//   res.json(leaderboard);
+// }

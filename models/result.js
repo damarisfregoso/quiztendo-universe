@@ -32,6 +32,10 @@ resultSchema.virtual('numCorrect').get(function() {
   return this.answers.filter((answer) => answer.correct).length;
 });
 
+resultSchema.virtual('numAnswered').get(function() {
+  return this.answers.length;
+});
+
 resultSchema.virtual('score').get(function() {
   const numCorrect = this.numCorrect;
   const numAnswered = this.numAnswered;
@@ -40,7 +44,7 @@ resultSchema.virtual('score').get(function() {
     return 0; // Avoid division by zero
   }
 
-  return (numCorrect / numAnswered) * 100;
+  return Math.round((numCorrect / numAnswered) * 100, 0);
 });
 
 resultSchema.statics.getForQuiz = function(userId, quizId) {

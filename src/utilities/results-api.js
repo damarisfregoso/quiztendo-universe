@@ -8,7 +8,11 @@ export function getForQuiz(quizId) {
 export function makeChoice(quizResultId, choiceId) {
   return sendRequest(`${BASE_URL}/${quizResultId}/choices/${choiceId}`, 'PUT');
 }
-export function getAllScores() {
-  return sendRequest();
+export function getLeaderBoard(quizId) {
+  return sendRequest(`${BASE_URL}/leaderboard/${quizId}`);
+}
+
+export function getBestResults() {
+  return sendRequest(`${BASE_URL}/best-for-user`)
 }
 
