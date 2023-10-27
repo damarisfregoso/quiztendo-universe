@@ -11,6 +11,10 @@
   color: red;
   font-size: 25px;
   text-decoration: none;
+  -moz-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
 }
 
 .NavBar span {
@@ -19,7 +23,8 @@
 
 .NavBar a:hover {
   font-family: 'New Super Mario Font U', sans-serif;
-  color: red;
+  color: rgb(249, 218, 93);
   text-decoration: none;
+
 }
 

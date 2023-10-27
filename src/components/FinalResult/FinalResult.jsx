@@ -22,9 +22,9 @@ export default function FinalResult({ quizResult }) {
     <div className='FinalResult'>
       <h2>Final Results</h2>
       <h3>{numCorrect} out of {numQuestions} correct - {pctCorrect}%</h3>
-      <div>
+      <div className='links'>
         <Link to='/'>Take Another Quiz</Link>
-        <Link to='/leadership'>View Leader Board</Link>
+        <Link to='/leaderboard'>View Leader Board</Link>
       </div>
     </div>
   )

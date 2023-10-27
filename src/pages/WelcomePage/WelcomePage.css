@@ -33,11 +33,16 @@
 
 .single-characters {
   margin: 50px;
+  -moz-transition: all .2s ease-in;
+  -o-transition: all .2s ease-in;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
 }
 
 .single-characters:hover {
   -webkit-text-stroke: 0.4px white;
   cursor: pointer;
+  color: linear-gradient(to left, red 50%, blue 50%) right;
 }
 
 .select-characters a{

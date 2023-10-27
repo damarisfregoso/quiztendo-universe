@@ -6,25 +6,25 @@ export default function LeaderBoardPage({ quizzes }) {
   const [selectedQuiz, setSelectedQuiz] = useState('');
   const [leaderBoard, setLeaderBoard] = useState([]);
 
-  // useEffect(function() {
-  //   async function getLeaderScore() {
-  //     try {
-  //       const data = await resultsAPI.getLeaderBoard(selectedQuiz);
-  //       setLeaderBoard(data);
-  //     } catch (error) {
-  //       console.error('Error fetching quiz:', error);
-  //     }
-  //   }
-  //   if (selectedQuiz) {
-  //     getLeaderScore();
-  //   }
-  // }, [selectedQuiz])
+  useEffect(() => {
+    if (selectedQuiz) {
+      async function getLeaderScore() {
+        try {
+          const data = await resultsAPI.getLeaderBoard(selectedQuiz);
+          setLeaderBoard(data);
+        } catch (error) {
+          console.error('Error fetching leaderboard:', error);
+        }
+      }
+      getLeaderScore();
+    }
+  }, [selectedQuiz]);
 
   return (
     <div className="LeaderBoardPage">
       <h1>Leader Board</h1>
       <select value={selectedQuiz} onChange={(e) => setSelectedQuiz(e.target.value)}>
-        <option value="">Select a Quiz</option>
+        <option value="">View Leader Board For:</option>
         {quizzes
           .map((quiz) => (
             <option key={quiz._id} value={quiz._id}>
@@ -35,7 +35,7 @@ export default function LeaderBoardPage({ quizzes }) {
       </select>
 
       <div>
-      <table>
+      <table className='custom-table'>
         <thead>
           <tr>
             <th>Rank</th>
@@ -48,7 +48,7 @@ export default function LeaderBoardPage({ quizzes }) {
           {leaderBoard.map((entry, index) => (
             <tr key={entry._id}>
               <td>{index + 1}</td>
-              <td>{entry.name}</td>
+              <td>{entry.user.name}</td>
               <td>{entry.score}</td>
               <td>{entry.date}</td>
             </tr>

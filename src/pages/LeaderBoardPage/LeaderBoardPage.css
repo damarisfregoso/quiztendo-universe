@@ -12,8 +12,33 @@
   border-radius: 10px;
   height: 50px;
   font-size: 25px;
+  margin-bottom: 15px;
 }
 
 .LeaderBoardPage table {
-  color: red;
+  color: rgb(249, 218, 93);
+  font-family: 'New Super Mario Font U', sans-serif;
+  -webkit-text-stroke: 0.8px red;
+  font-size: 30px;
+  text-align: center;
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.custom-table th {
+  background-color: #f2f2f2;
+  border: 2px solid rgb(56, 192, 95);
+  padding: 8px;
+  text-align: center;
+}
+
+.custom-table td {
+  border: 2px solid red;
+  padding: 8px;
+  text-align: center;
 }

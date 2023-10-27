@@ -3,8 +3,8 @@ const Result = require('../../models/result');
 module.exports = {
   getForQuiz,
   makeChoice,
-  getBestResults
-  // getLeaderBoard
+  getBestResults,
+  getLeaderBoard
 }
 
 async function getForQuiz(req, res) {
@@ -44,11 +44,11 @@ async function getBestResults(req, res) {
   res.json(results);
 }
 
-// async function getLeaderBoard(req, res) {
-//   const quizId = req.params.quizId;
-//   const leaderboard = await Result.find({quiz: quizId, 'answers.corrrect': true})
-//   .populate('name', 'name')
-//   .sort({ score: -1 })
-//   .exec();
-//   res.json(leaderboard);
-// }
+async function getLeaderBoard(req, res) {
+  const quizId = req.params.quizId;
+  const leaderboard = await Result.find({ quiz: quizId, 'answers.correct': true })
+    .populate('user', 'name')
+    .sort({ score: -1 })
+    .exec();
+  res.json(leaderboard);
+}

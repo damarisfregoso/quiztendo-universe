@@ -11,6 +11,6 @@ router.get('/:quizId', resultsCtrl.getForQuiz);
 router.put('/:resultId/choices/:choiceId', resultsCtrl.makeChoice);
 
 //GET /api/results/leaderboard/:quizId
-// router.get('/leaderboard/:quizId', resultsCtrl.getLeaderBoard);
+router.get('/leaderboard/:quizId', resultsCtrl.getLeaderBoard);
 
 module.exports = router;

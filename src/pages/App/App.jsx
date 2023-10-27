@@ -12,6 +12,7 @@ import * as quizzesAPI from '../../utilities/quizzes-api'
 import LeaderBoardPage from '../LeaderBoardPage/LeaderBoardPage';
 import MyPastQuizPage from '../MyPastQuizPage/MyPastQuizPage';
 import './App.css';
+import Footer from '../../components/Footer/Footer';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
@@ -31,7 +32,7 @@ export default function App() {
   }, []);
 
   return (
-    <main className="App">
+    <div className="App">
       { user ?
           <>
             <NavBar user={user} setUser={setUser} />
@@ -40,7 +41,7 @@ export default function App() {
               <Route path="/" element={<WelcomePage user={user} characters={characters} quizzes={quizzes}/>} />
               <Route path="/help" element={<HelpPage />} />
               <Route path="/quiz/:quizId" element={<QuizPage />} />
-              <Route path="/leadership" element={<LeaderBoardPage quizzes={quizzes} user={user} />} />
+              <Route path="/leaderboard" element={<LeaderBoardPage quizzes={quizzes} user={user} />} />
               <Route path="/myquizzes" element={<MyPastQuizPage quizzes={quizzes} user={user} />} />
               <Route path="/start/:character" element={<StartQuizPage chars={characters} quizzes={quizzes}/>} />
             </Routes>
@@ -48,6 +49,7 @@ export default function App() {
           :
           <AuthPage setUser={setUser} />
       }
-    </main>
+    <footer><Footer /></footer>
+    </div>
   );
 }

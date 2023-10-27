@@ -21,20 +21,27 @@
 }
 
 .FinalResult a {
-  display: inline-block; 
-  background-color: black;
-  border:  solid 3px;
-  color: rgb(103, 66, 213);
+  background-color: rgb(249, 218, 93);
+  border:  red solid 3px;
+  color: black;
   padding: 10px 20px;
   border-radius: 10px;
   text-decoration: none;
   margin: 30px;
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
+  -moz-transition: all .4s ease-in;
+  -o-transition: all .4s ease-in;
+  -webkit-transition: all .4s ease-in;
+  transition: all .4s ease-in;
 }
 
 .FinalResult a:hover {
-  background-color: rgb(103, 66, 213);
-  border: rgb(103, 66, 213) solid 3px;
-  color: black;
+  background-color: black;
+  border: red solid 3px;
+  color: rgb(249, 218, 93);
+}
+
+.FinalResult .links {
+  display: flex;
 }

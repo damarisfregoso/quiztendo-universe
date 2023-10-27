@@ -22,7 +22,11 @@ const resultSchema = mongoose.Schema({
       choice: {type:String, required: true },
       correct: {type: Boolean, required: true},
     }
-  ]
+  ],
+  date: {
+    type: Date, 
+    default: Date.now, 
+  }
 }, {
   timestamps: true,
   toJSON: {virtuals: true}

@@ -25,6 +25,10 @@
   margin: 30px;
   font-size: 30px;
   text-align: center;
+  -moz-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
 }
 
 .StartQuizPage a:hover {

@@ -4,6 +4,9 @@ body {
 
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -72,5 +75,17 @@ body {
 .form-container button {
   color: rgb(103, 66, 213);
   background-color: black;
+  -moz-transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+  transition: all .3s ease-in;
 }
 
+
+footer {
+  font-family: 'New Super Mario Font U', sans-serif;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+  margin-top: auto;
+}
