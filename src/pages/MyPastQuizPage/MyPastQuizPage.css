@@ -26,3 +26,10 @@
   font-size: 30px;
   -webkit-text-stroke: 1px white;
 }
+
+.MyPastQuizPage table {
+  color: rgb(249, 218, 93);
+  font-family: 'New Super Mario Font U', sans-serif;
+  font-size: 30px;
+  text-align: center;
+}

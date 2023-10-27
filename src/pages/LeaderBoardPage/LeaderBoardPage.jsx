@@ -40,17 +40,17 @@ export default function LeaderBoardPage({ quizzes }) {
           <tr>
             <th>Rank</th>
             <th>User</th>
-            <th>Score</th>
-            <th>Date</th>
+            <th>Quizzes Taken</th>
+            <th>Average Score</th>
           </tr>
         </thead>
         <tbody>
           {leaderBoard.map((entry, index) => (
             <tr key={entry._id}>
               <td>{index + 1}</td>
-              <td>{entry.user.name}</td>
-              <td>{entry.score}</td>
-              <td>{entry.date}</td>
+              <td>{entry.user}</td>
+              <td>{entry.numQuizzes}</td>
+              <td>{(entry.totalScore / entry.numQuizzes).toFixed(2)}</td>
             </tr>
           ))}
         </tbody>

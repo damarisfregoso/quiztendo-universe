@@ -16,16 +16,22 @@ export default function MyPastQuizPage() {
   return (
     <div className="MyPastQuizPage">
       <h1>My Past Quizzes</h1>
-      <ul>
-        {pastQuizzes.map((result) => (
-          <li key={result.quiz._id}>
-            <div className='past-quiz-display'>
-              <h3>{result.quiz.title}:&nbsp; &nbsp;</h3>
-              <p>{result.score}%&nbsp; &nbsp;</p>
-            </div>
-          </li>
-        ))}
-      </ul>
+      <table className="custom-table">
+        <thead>
+          <tr>
+            <th>Quiz Name</th>
+            <th>Average Score</th>
+          </tr>
+        </thead>
+        <tbody>
+          {pastQuizzes.map((result) => (
+            <tr key={result.quiz._id}>
+              <td>{result.quiz.title}</td>
+              <td>{result.averageScore.toFixed(2)}%</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   )
 }

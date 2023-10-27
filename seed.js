@@ -2,9 +2,11 @@ require('dotenv').config();
 require('./config/database');
 
 const Quiz = require('./models/quiz');
+const Result = require('./models/result');
 
 (async function () {
   await Quiz.deleteMany({});
+  await Result.deleteMany({});
   const quizzes = await Quiz.create([
     {
       character: 'Luigi',
