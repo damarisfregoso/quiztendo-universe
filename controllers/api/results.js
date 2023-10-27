@@ -44,8 +44,6 @@ async function getBestResults(req, res) {
   res.json(results);
 }
 
-
-
 // async function getLeaderBoard(req, res) {
 //   const quizId = req.params.quizId;
 //   const leaderboard = await Result.find({quiz: quizId, 'answers.corrrect': true})

@@ -29,6 +29,16 @@ export default function QuizPage() {
   async function handleChoice(choiceId) {
     const updatedQuizResult = await resultsAPI.makeChoice(quizResult._id, choiceId);
     setQuizResult(updatedQuizResult);
+    
+    if (updatedQuizResult.answers[updatedQuizResult.answers.length - 1]?.correct) {
+      // Play the correct sound from the public folder
+      const correctSound = new Audio('/sounds/correct.mp3');
+      correctSound.play();
+    } else {
+      // Play the incorrect sound from the public folder
+      const incorrectSound = new Audio('/sounds/incorrect.mp3');
+      incorrectSound.play();
+    }
   }
 
   return (

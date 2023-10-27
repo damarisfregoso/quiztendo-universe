@@ -12,7 +12,7 @@ export default function NavBar({ user, setUser }) {
     <nav className='NavBar'>
       <Link to="/help">Help</Link>
       &nbsp; | &nbsp;
-      <Link to="/leadership">Leadership Board</Link>
+      <Link to="/leadership">Leader Board</Link>
       &nbsp; | &nbsp;
       <Link to="/myquizzes">Past Quizzes</Link>
       &nbsp; | &nbsp;

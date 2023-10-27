@@ -10,7 +10,14 @@
 
 .FinalResult h2 {
   color: red;
+  font-size: 65px;
+  -webkit-text-stroke: 0.4px white;
+}
+
+.FinalResult h3 {
+  color: red;
   font-size: 40px;
+  -webkit-text-stroke: 0.4px white;
 }
 
 .FinalResult a {
