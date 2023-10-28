@@ -373,9 +373,497 @@ const Result = require('./models/result');
           ],
         },
       ],
+    },
+    {
+      character: 'Peach',
+      title: 'Peach Quiz 1',
+      questions: [
+        {
+          sequence: 1,
+          prompt: "What is Princess Peach's full name in the Super Mario series?",
+          correctChoice: 'A',
+          choices: [
+            { choice: 'A', prompt: 'Peach Toadstool' },
+            { choice: 'B', prompt: 'Peach Mushroom' },
+            { choice: 'C', prompt: 'Peach Mario' },
+            { choice: 'D', prompt: 'Peach Koopa' },
+          ],
+        },
+        {
+          sequence: 2,
+          prompt: "Which kingdom does Princess Peach rule over?",
+          correctChoice: 'C',
+          choices: [
+            { choice: 'A', prompt: 'Star Kingdom' },
+            { choice: 'B', prompt: "Flower Kingdom" },
+            { choice: 'C', prompt: 'Mushroom Kingdom' },
+            { choice: 'D', prompt: "Toad Kingdom" },
+          ],
+        },
+        {
+          sequence: 3,
+          prompt: "Princess Peach is often kidnapped by who?",
+          correctChoice: 'A',
+          choices: [
+            { choice: 'A', prompt: 'Bowser' },
+            { choice: 'B', prompt: 'Wario' },
+            { choice: 'C', prompt: 'Donkey Kong' },
+            { choice: 'D', prompt: 'Luigi' },
+          ],
+        },
+        {
+          sequence: 4,
+          prompt: "What is the name of Princess Peach's loyal Toadstool assistant and protector?",
+          correctChoice: 'B',
+          choices: [
+            { choice: 'A', prompt: 'Toadele' },
+            { choice: 'B', prompt: 'Toadsworth' },
+            { choice: 'C', prompt: 'Tod' },
+            { choice: 'D', prompt: 'Mario' },
+          ],
+        },
+        {
+          sequence: 5,
+          prompt: "In Super Mario 64, Princess Peach sends Mario on a quest to collect which iconic items?",
+          correctChoice: 'A',
+          choices: [
+            { choice: 'A', prompt: 'Power Stars' },
+            { choice: 'B', prompt: 'Coins' },
+            { choice: 'C', prompt: 'Mushrooms' },
+            { choice: 'D', prompt: '1-Up Mushrooms' },
+          ],
+        },
+      ],
+    },
+		{
+      character: 'Peach',
+      title: 'Peach Quiz 2',
+      questions: [
+        {
+          sequence: 1,
+          prompt: "What is the name of Princess Peach's trusted parasol that she uses for protection in some games?",
+          correctChoice: 'D',
+          choices: [
+            { choice: 'A', prompt: 'Peachy Parasol' },
+            { choice: 'B', prompt: 'Royal Umbrella' },
+            { choice: 'C', prompt: 'Toadstool Shield' },
+            { choice: 'D', prompt: 'Perry the Parasol' },
+          ],
+        },
+        {
+          sequence: 2,
+          prompt: "In the Super Mario Kart series, what color is Princess Peach's standard kart?",
+          correctChoice: 'A',
+          choices: [
+            { choice: 'A', prompt: 'Pink' },
+            { choice: 'B', prompt: 'Blue' },
+            { choice: 'C', prompt: "Red" },
+            { choice: 'D', prompt: "Yellow" },
+          ],
+        },
+        {
+          sequence: 3,
+          prompt: "Princess Peach made her debut appearance in the Super Mario series in which game?",
+          correctChoice: 'B',
+          choices: [
+            { choice: 'A', prompt: 'Super Mario 64' }, 
+						{ choice: 'B', prompt: 'Super Mario Bros.' },
+            { choice: 'C', prompt: 'Super Mario World' },
+            { choice: 'D', prompt: 'Super Mario Sunshine' },
+          ],
+        },
+        {
+          sequence: 4,
+          prompt: "In the game Super Mario RPG: Legend of the Seven Stars, Princess Peach is known for her skills in which activity?",
+          correctChoice: 'C',
+          choices: [
+            { choice: 'A', prompt: 'Baking' },
+            { choice: 'B', prompt: 'Racing' },
+            { choice: 'C', prompt: 'Gardening' },
+            { choice: 'D', prompt: 'Singing' },
+          ],
+        },
+        {
+          sequence: 5,
+          prompt: "What is Princess Peach's special ability or power in the Super Mario series?",
+          correctChoice: 'D',
+          choices: [
+            { choice: 'A', prompt: 'Levitation' },
+            { choice: 'B', prompt: 'Invisibility' },
+            { choice: 'C', prompt: 'Super strength' },
+            { choice: 'D', prompt: 'Emotion-based abilities' },
+          ],
+        },
+      ],
+    },
+    {
+      character: 'Waluigi',
+      title: 'Waluigi Quiz 1',
+      questions: [
+        {
+          sequence: 1,
+          prompt: "What is Waluigi's primary color?",
+          correctChoice: 'D',
+          choices: [
+						{ choice: 'A', prompt: 'Green' },
+            { choice: 'B', prompt: 'Blue' },
+            { choice: 'C', prompt: 'Yellow' },
+            { choice: 'D', prompt: 'Purple' },
+          ],
+        },
+        {
+          sequence: 2,
+          prompt: "Waluigi is known for his rivalry with which character?",
+          correctChoice: 'C',
+          choices: [
+            { choice: 'A', prompt: 'Mario' },
+            { choice: 'B', prompt: 'Yoshi' },
+            { choice: 'C', prompt: 'Luigi' },
+            { choice: 'D', prompt: 'Bowser' },
+          ],
+        },
+        {
+          sequence: 3,
+          prompt: "What is Waluigi's primary occupation in the Super Mario series?",
+          correctChoice: 'B',
+          choices: [
+            { choice: 'A', prompt: 'Plumber' },
+            { choice: 'B', prompt: 'Mischief Maker' },
+            { choice: 'C', prompt: 'Hero' },
+            { choice: 'D', prompt: 'Villain' },
+          ],
+        },
+        {
+          sequence: 4,
+          prompt: "Which Super Mario spin-off game series commonly features Waluigi as a playable character?",
+          correctChoice: 'A',
+          choices: [
+            { choice: 'A', prompt: 'Mario Kart' },
+            { choice: 'B', prompt: 'Super Mario Bros.' },
+            { choice: 'C', prompt: 'Super Smash Bros.' },
+            { choice: 'D', prompt: 'Mario Party' },
+          ],
+        },
+        {
+          sequence: 5,
+          prompt: "Waluigi is often seen wearing a hat with a symbol on it. What is the symbol?",
+          correctChoice: 'D',
+          choices: [
+            { choice: 'A', prompt: 'Star' },
+            { choice: 'B', prompt: 'W' },
+            { choice: 'C', prompt: 'Question Mark' },
+            { choice: 'D', prompt: 'Upside-Down L' },
+          ],
+        },
+      ],
+    },
+		{
+      character: 'Waluigi',
+      title: 'Waluigi Quiz 2',
+      questions: [
+        {
+          sequence: 1,
+          prompt: "In the Mario Tennis series, what type of shot is Waluigi known for using?",
+          correctChoice: 'C',
+          choices: [
+            { choice: 'A', prompt: 'Slice Shot' },
+            { choice: 'B', prompt: 'Power Shot' },
+            { choice: 'C', prompt: 'Destruction Shot' },
+            { choice: 'D', prompt: 'Spin Shot' },
+          ],
+        },
+        {
+          sequence: 2,
+          prompt: "Which Mario sports game is Waluigi known for competing in alongside other characters?",
+          correctChoice: 'B',
+          choices: [
+            { choice: 'A', prompt: 'Mario Tennis' },
+            { choice: 'B', prompt: 'Mario Strikers' },
+            { choice: 'C', prompt: 'Mario Golf' },
+            { choice: 'D', prompt: 'Mario Baseball' },
+          ],
+        },
+        {
+          sequence: 3,
+          prompt: "In the Super Mario series, which event or activity is Waluigi most passionate about?",
+          correctChoice: 'A',
+          choices: [
+            { choice: 'A', prompt: 'Dancing' },
+            { choice: 'B', prompt: 'Cooking' },
+            { choice: 'C', prompt: 'Painting' },
+            { choice: 'D', prompt: 'Gardening' },          
+					],
+        },
+        {
+          sequence: 4,
+          prompt: "What is Waluigi's relationship to Wario in the Super Mario series?",
+          correctChoice: 'B',
+          choices: [
+						{ choice: 'A', prompt: 'Brother' },
+            { choice: 'B', prompt: 'Rival' },
+            { choice: 'C', prompt: 'Friend' },
+            { choice: 'D', prompt: 'Ally' },
+          ],
+        },
+        {
+          sequence: 5,
+          prompt: "Which Super Mario game features a mini-game called 'Waluigi's Island'?",
+          correctChoice: 'C',
+          choices: [
+						{ choice: 'A', prompt: 'Mario Party 1' },
+            { choice: 'B', prompt: 'Mario Party 2' },
+            { choice: 'C', prompt: 'Mario Party 3' },
+            { choice: 'D', prompt: 'Mario Party 4' },
+          ],
+        },
+      ],
+    },
+    {
+      character: 'Wario',
+      title: 'Wario Quiz 1',
+      questions: [
+        {
+          sequence: 1,
+          prompt: "What is Wario's primary color?",
+          correctChoice: 'D',
+          choices: [
+            { choice: 'A', prompt: 'Purple' },
+            { choice: 'B', prompt: 'Red' },
+            { choice: 'C', prompt: 'Green' },
+            { choice: 'D', prompt: 'Yellow' },
+          ],
+        },
+        {
+          sequence: 2,
+          prompt: "Wario is known for his insatiable love for which item or substance in the Super Mario series?",
+          correctChoice: 'A',
+          choices: [
+            { choice: 'A', prompt: 'Garlic' },
+            { choice: 'B', prompt: 'Coins' },
+            { choice: 'C', prompt: 'Mushrooms' },
+            { choice: 'D', prompt: 'Star Power' },
+          ],
+        },
+        {
+          sequence: 3,
+          prompt: "What is the name of Wario's own gaming company in the Super Mario series?",
+          correctChoice: 'B',
+          choices: [
+            { choice: 'A', prompt: 'Wario Games Co.' },
+            { choice: 'B', prompt: 'WarioWare, Inc.' },
+            { choice: 'C', prompt: "Wario's World" },
+            { choice: 'D', prompt: 'Wario Productions' },
+          ],
+        },
+        {
+          sequence: 4,
+          prompt: "Wario's first appearance in a Super Mario game was in which title?",
+          correctChoice: 'D',
+          choices: [
+            { choice: 'A', prompt: 'Super Mario Bros.' },
+            { choice: 'B', prompt: 'Super Mario World' },
+            { choice: 'C', prompt: 'Super Mario Land' },
+            { choice: 'D', prompt: 'Super Mario Land 2: 6 Golden Coins' },
+          ],
+        },
+        {
+          sequence: 5,
+          prompt: "What is the name of Wario's rival in the Wario Land game series?",
+          correctChoice: 'A',
+          choices: [
+            { choice: 'A', prompt: 'Captain Syrup' },
+            { choice: 'B', prompt: 'Koopa' },
+            { choice: 'C', prompt: 'Luigi' },
+            { choice: 'D', prompt: 'Bowser' },
+          ],
+        },
+      ],
+    },
+		{
+      character: 'Wario',
+      title: 'Wario Quiz 2',
+      questions: [
+        {
+          sequence: 1,
+          prompt: "Wario is known for his unique abilities. Which of the following is one of his signature moves?",
+          correctChoice: 'C',
+          choices: [
+            { choice: 'A', prompt: 'Triple Jump' },
+            { choice: 'B', prompt: 'Super Jump Punch' },
+            { choice: 'C', prompt: 'Shoulder Bash' },
+            { choice: 'D', prompt: 'Ground Pound' },
+          ],
+        },
+        {
+          sequence: 2,
+          prompt: "In the game 'Wario Land: Super Mario Land 3,' Wario sets off on a quest to find a legendary treasure. What is the name of this treasure?",
+          correctChoice: 'D',
+          choices: [
+            { choice: 'A', prompt: 'Superstar' },
+            { choice: 'B', prompt: 'Mushroom Kingdom Crown' },
+            { choice: 'C', prompt: 'Crystal Star' },
+            { choice: 'D', prompt: 'Golden Pyramid' },
+          ],
+        },
+        {
+          sequence: 3,
+          prompt: "Wario has a distinct laugh that is often heard in the games. What is his characteristic laugh?",
+          correctChoice: 'C',
+          choices: [
+						{ choice: 'A', prompt: 'Ha-ha-ha!' },
+            { choice: 'B', prompt: 'Hee-hee-hee!' },
+            { choice: 'C', prompt: 'Wah-ha-ha!' },
+            { choice: 'D', prompt: 'Ho-ho-ho!' },      
+					],
+        },
+        {
+          sequence: 4,
+          prompt: "In the game 'WarioWare, Inc.: Mega Microgames!,' Wario starts his own game development company. What is the name of this company?",
+          correctChoice: 'A',
+          choices: [
+            { choice: 'A', prompt: 'WarioWare, Inc.' },
+            { choice: 'B', prompt: "Wario's Creations" },
+            { choice: 'C', prompt: 'Mega Microgame$ Studios' },
+            { choice: 'D', prompt: 'Diamond City Games' },
+          ],
+        },
+        {
+          sequence: 5,
+          prompt: "In 'Wario: Master of Disguise,' Wario is on a quest to steal a legendary artifact. What is the name of this artifact?",
+          correctChoice: 'D',
+          choices: [
+            { choice: 'A', prompt: 'Infinite Mushroom' },
+            { choice: 'B', prompt: 'Eternal Star' },
+            { choice: 'C', prompt: 'Unlimited Power Gem' },
+            { choice: 'D', prompt: 'Bottomless Coin Sack' },
+          ],
+        },
+      ],
+    },
+    {
+      character: 'Bowser Jr.',
+      title: 'Bowser Jr. Quiz 1',
+      questions: [
+        {
+          sequence: 1,
+          prompt: "What is the primary color of Bowser Jr.'s shell?",
+          correctChoice: 'D',
+          choices: [
+            { choice: 'A', prompt: 'Red' },
+            { choice: 'B', prompt: 'Blue' },
+            { choice: 'C', prompt: 'Yellow' },
+            { choice: 'D', prompt: 'Green' },
+          ],
+        },
+        {
+          sequence: 2,
+          prompt: "Who is Bowser Jr.'s father in the Super Mario series?",
+          correctChoice: 'A',
+          choices: [
+            { choice: 'A', prompt: 'Bowser' },
+            { choice: 'B', prompt: 'Mario' },
+            { choice: 'C', prompt: 'Luigi' },
+            { choice: 'D', prompt: 'Yoshi' },
+          ],
+        },
+        {
+          sequence: 3,
+          prompt: "Bowser Jr. is often accompanied by a small clown-shaped airship. What is the name of this airship?",
+          correctChoice: 'B',
+          choices: [
+            { choice: 'A', prompt: 'Koopa Cruiser' },
+            { choice: 'B', prompt: 'Koopa Clown Car' },
+            { choice: 'C', prompt: 'Airship Jr.' },
+            { choice: 'D', prompt: "Bowser's Buggy" },
+          ],
+        },
+        {
+          sequence: 4,
+          prompt: "What is Bowser Jr.'s primary goal in most Super Mario games?",
+          correctChoice: 'A',
+          choices: [
+            { choice: 'C', prompt: 'Collect Coins' },
+            { choice: 'B', prompt: 'Defeat Mario' },
+            { choice: 'C', prompt: 'Rescue Peach' },
+            { choice: 'D', prompt: 'Steal Power Stars' },
+          ],
+        },
+        {
+          sequence: 5,
+          prompt: "What is the nickname often used to refer to Bowser Jr. in the Super Mario series?",
+          correctChoice: 'B',
+          choices: [
+            { choice: 'A', prompt: 'B.J.' },
+            { choice: 'B', prompt: 'Junior' },
+            { choice: 'C', prompt: "Lil' Bowser" },
+            { choice: 'D', prompt: 'Koopa Kid' },
+          ],
+        },
+      ],
+    },
+		{
+      character: 'Bowser Jr.',
+      title: 'Bowser Jr. Quiz 2',
+      questions: [
+        {
+          sequence: 1,
+          prompt: "In 'Super Mario Sunshine,' Bowser Jr. disguises himself as which character to deceive Mario?",
+          correctChoice: 'C',
+          choices: [
+            { choice: 'A', prompt: 'Luigi' },
+            { choice: 'B', prompt: 'Wario' },
+            { choice: 'C', prompt: 'Shadow Mario' },
+            { choice: 'D', prompt: 'Yoshi' },
+          ],
+        },
+        {
+          sequence: 2,
+          prompt: "In 'Super Mario Galaxy,' Bowser Jr. aids his father in capturing power stars. What is his role in this game?",
+          correctChoice: 'C',
+          choices: [
+            { choice: 'A', prompt: 'Mastermind behind the plan' },
+            { choice: 'B', prompt: 'Minion collecting power stars' },
+            { choice: 'C', prompt: 'Pilot of the Jr. Clown Car' },
+            { choice: 'D', prompt: 'Innocent bystander' },          
+					],
+        },
+        {
+          sequence: 3,
+          prompt: "What is the name of Bowser Jr.'s special paintbrush in 'Super Mario Sunshine'?",
+          correctChoice: 'D',
+          choices: [
+            { choice: 'A', prompt: 'The Bob Ross Paintbrush' },
+            { choice: 'B', prompt: 'The Picasso Paintbrush' },
+            { choice: 'C', prompt: 'The Bowser Jr. Paintbrush' },
+            { choice: 'D', prompt: 'The Magic Paintbrush' },      
+					],
+        },
+        {
+          sequence: 4,
+          prompt: "In 'New Super Mario Bros.,' Bowser Jr. transforms into different forms during boss battles. What is his most common transformation?",
+          correctChoice: 'B',
+          choices: [
+            { choice: 'A', prompt: 'Giant Goomba' },
+            { choice: 'B', prompt: 'Koopa Clown Car' },
+            { choice: 'C', prompt: 'Bullet Bill' },
+            { choice: 'D', prompt: 'Boo' },
+          ],
+        },
+        {
+          sequence: 5,
+          prompt: "Bowser Jr. has a signature laugh in the games. What does he often say when he laughs?",
+          correctChoice: 'C',
+          choices: [
+            { choice: 'Ha ha ha!', prompt: 'Ha ha ha!' },
+            { choice: 'Ho ho ho!', prompt: 'Ho ho ho!' },
+            { choice: 'Hee hee hee!', prompt: 'Hee hee hee!' },
+            { choice: 'Ha hee ho!', prompt: 'Ha hee ho!' },
+          ],
+        },
+      ],
     }
   ]);
-
+  
   console.log(quizzes)
   process.exit();
 })();

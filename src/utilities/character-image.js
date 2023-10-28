@@ -8,7 +8,19 @@ const characterImages = [
   },
   {name: 'Bowser', 
   image: 'https://mario.wiki.gallery/images/3/3f/SMBW_Bowser_Artwork.png',
-  }
+  },
+  {name: 'Princess Peach', 
+  image: 'https://ssb.wiki.gallery/images/thumb/e/e2/Peach.png/1200px-Peach.png',
+  },
+  {name: 'Waluigi', 
+  image: 'https://upload.wikimedia.org/wikipedia/en/thumb/4/46/Waluigi.png/180px-Waluigi.png',
+  },
+  {name: 'Wario', 
+  image: 'https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:600/h:561/q:75/https://bleedingcool.com/wp-content/uploads/2018/03/Wario.png',
+  },
+  {name: 'Bowser Jr.', 
+  image: 'https://i.redd.it/32z0j6stb1541.png',
+  },
 ]
 
 export default characterImages;

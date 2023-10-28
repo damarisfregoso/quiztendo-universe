@@ -77,7 +77,6 @@ async function getLeaderBoard(req, res) {
   // Fetch results for the specified quiz, populate user information, and filter by inProgress: false
   const leaderboard = await Result.find({ quiz: quizId, 'answers.correct': true })
     .populate('user', 'name')
-    .sort({ score: -1 })
     .exec();
   // Calculate the number of quizzes each user has taken and the average score
   const userStats = leaderboard.reduce((acc, result) => {
@@ -93,13 +92,18 @@ async function getLeaderBoard(req, res) {
     acc[userName].totalScore += result.score;
     return acc;
   }, {});
-  const finalLeaderboard = Object.values(userStats)
-    .sort((a, b) => {
-      // Sort first by the number of quizzes, and then by average score
-      if (b.numQuizzes === a.numQuizzes) {
-        return b.totalScore / b.numQuizzes - a.totalScore / a.numQuizzes;
-      }
-      return b.numQuizzes - a.numQuizzes;
-    });
-  res.json(finalLeaderboard);
+  // Sort users by average score in descending order
+  const sortedLeaderboard = Object.values(userStats).sort((a, b) => {
+    const avgScoreA = a.numQuizzes > 0 ? a.totalScore / a.numQuizzes : 0;
+    const avgScoreB = b.numQuizzes > 0 ? b.totalScore / b.numQuizzes : 0;
+
+    if (avgScoreA === avgScoreB) {
+      // If average scores are equal, sort by the number of quizzes (ascending)
+      return a.numQuizzes - b.numQuizzes;
+    }
+
+    // Sort by average score (descending)
+    return avgScoreB - avgScoreA;
+  });
+  res.json(sortedLeaderboard);
 };
