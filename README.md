@@ -14,7 +14,7 @@
 <div id="body" align='center'>
 
 ## 🖨 Description 
-Quiztendo Universe is a fun Super Mario Bros themed quiz game.  Test your knowledge to on all sorts of different charcters, from the good guys to the bad guys with questions ranging from back in the days to current fun questions. 
+Quiztendo Universe is a fun Super Mario Bros themed quiz game.  Test your knowledge on all sorts of different charcters, from the good guys to the bad guys with questions ranging from back in the days to current fun questions. 
 
  ## 📸 Screenshots  
   |   Description | Screenshot | 
@@ -64,7 +64,7 @@ Quiztendo Universe is a fun Super Mario Bros themed quiz game.  Test your knowle
 
   <p> Viewing the leader board </p>
 
-    1. Once a user completes a quiz there test is automatically sent to the leader board.
+    1. Once a user completes a quiz their test is automatically sent to the leader board.
     2. Once you are on the leader board page you are prompted to choose a quiz you would like to see the leader board for. 
     3. After selecting the specific quiz board you will see all past users scores being compared to one another.
     4. Leaders are determined by the highest scores, then by the least amount of quizzes they have taken. 

@@ -375,8 +375,8 @@ const Result = require('./models/result');
       ],
     },
     {
-      character: 'Peach',
-      title: 'Peach Quiz 1',
+      character: 'Princess Peach',
+      title: 'Princess Peach Quiz 1',
       questions: [
         {
           sequence: 1,
@@ -436,8 +436,8 @@ const Result = require('./models/result');
       ],
     },
 		{
-      character: 'Peach',
-      title: 'Peach Quiz 2',
+      character: 'Princess Peach',
+      title: 'Princess Peach Quiz 2',
       questions: [
         {
           sequence: 1,
