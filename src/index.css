@@ -144,7 +144,9 @@ button.btn-xs {
 
 button:disabled, form:invalid button[type="submit"] {
   cursor: not-allowed;
-  background-color: var(--tan-4);
+  background-color: red;
+  color: black;
+  border: black 3px solid;
 }
 
 button[type="submit"] {

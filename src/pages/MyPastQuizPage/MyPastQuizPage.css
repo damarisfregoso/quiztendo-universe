@@ -33,3 +33,18 @@
   font-size: 30px;
   text-align: center;
 }
+
+.MyPastQuizPage .click {
+  text-decoration: none;
+  color: red;
+    background: 
+      linear-gradient(red 0 0) no-repeat
+      var(--p, 200%) 100% / 200% var(--p, .08em);
+    transition: .3s var(--t, 0s), background-position .3s calc(.3s - var(--t, 0s));
+}
+
+.MyPastQuizPage .click:hover {
+    --p: 100%;
+    --t: .3s;
+    color: black;
+}

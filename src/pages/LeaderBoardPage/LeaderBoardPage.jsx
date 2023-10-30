@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import * as resultsAPI from '../../utilities/results-api';
+import { Link } from 'react-router-dom';
 import './LeaderBoardPage.css'
 
 export default function LeaderBoardPage({ quizzes }) {
@@ -45,17 +46,25 @@ export default function LeaderBoardPage({ quizzes }) {
           </tr>
         </thead>
         <tbody>
-          {leaderBoard.map((entry, index) => (
-            <tr key={entry._id}>
+          {leaderBoard.length === 0 ? (
+            <tr>
+              <td colSpan="4">No current leaders to display.</td>
+            </tr>
+          ) : (
+            leaderBoard.map((entry, index) => (
+              <tr key={entry._id}>
               <td>{index + 1}</td>
               <td>{entry.user}</td>
               <td>{entry.numQuizzes}</td>
               <td>{(entry.totalScore / entry.numQuizzes).toFixed(2)}</td>
             </tr>
-          ))}
+          ))
+          )}
         </tbody>
       </table>
       </div>
+      <br /> <br />
+      <Link className='click' to='/'>Take A Quiz</Link>
     </div>
   )
 }

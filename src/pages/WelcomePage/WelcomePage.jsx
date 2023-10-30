@@ -5,7 +5,7 @@ export default function WelcomePage({ user, characters }) {
   return (
     <div className='WelcomePage'>
       <h1>Welcome {user.name} </h1>
-      <h2>Choose a character!</h2>
+      <h2>Choose a character to quiz for!</h2>
       <div className='select-characters'>
         {characters.map((character) => ( 
           <Link to={`/start/${character.name}`} key={character.name}>

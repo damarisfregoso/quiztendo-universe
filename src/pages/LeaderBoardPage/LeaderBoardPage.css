@@ -1,13 +1,16 @@
-.LeaderBoardPage h1{
+.LeaderBoardPage {
   font-family: 'New Super Mario Font U', sans-serif;
+}
+
+.LeaderBoardPage h1{
   color: red;
   font-size: 80px;
   -webkit-text-stroke: 0.5px rgb(56, 192, 95);
 }
 
 .LeaderBoardPage select{
-  color: white;
   font-family: 'New Super Mario Font U', sans-serif;
+  color: white;
   background-color: rgb(56, 192, 95);
   border-radius: 10px;
   height: 50px;
@@ -18,7 +21,6 @@
 
 .LeaderBoardPage table {
   color: rgb(249, 218, 93);
-  font-family: 'New Super Mario Font U', sans-serif;
   font-size: 30px;
   text-align: center;
 }
@@ -44,4 +46,20 @@
   text-align: center;
   border-radius: 10px;
   -webkit-text-stroke: 0.8px red;
+}
+
+.LeaderBoardPage .click {
+  font-size: 15px;
+  text-decoration: none;
+  color: red;
+    background: 
+      linear-gradient(red 0 0) no-repeat
+      var(--p, 200%) 100% / 200% var(--p, .08em);
+    transition: .3s var(--t, 0s), background-position .3s calc(.3s - var(--t, 0s));
+}
+
+.LeaderBoardPage .click:hover {
+    --p: 100%;
+    --t: .3s;
+    color: black;
 }
