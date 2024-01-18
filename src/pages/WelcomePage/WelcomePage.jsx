@@ -4,7 +4,7 @@ import './WelcomePage.css'
 export default function WelcomePage({ user, characters }) {
   return (
     <div className='WelcomePage'>
-      <h1>Welcome {user.name} </h1>
+      {/* <h1>Welcome {user.name} </h1> */}
       <h2>Choose a character to quiz for!</h2>
       <div className='select-characters'>
         {characters.map((character) => ( 

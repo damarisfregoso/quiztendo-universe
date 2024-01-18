@@ -58,7 +58,7 @@ export default function LeaderBoardPage({ quizzes }) {
               <td>{entry.numQuizzes}</td>
               <td>{(entry.totalScore / entry.numQuizzes).toFixed(2)}</td>
             </tr>
-          ))
+            ))
           )}
         </tbody>
       </table>

@@ -26,24 +26,6 @@ async function makeChoice(req, res) {
   res.json(result);
 }
 
-// async function getBestResults(req, res) {
-//   // Fetch quiz results for the user
-//   let results = await Result.find({ user: req.user._id, inProgress: false }).populate('quiz');
-
-//   results = results.reduce(function(acc, result) {
-//     const idx = acc.findIndex((r) => r.quiz._id.equals(result.quiz._id));
-//     if (idx === -1) {
-//       acc.push(result);
-//     } else {
-//       acc.splice(idx, 1, result);
-//     }
-//     return acc;
-//   }, []);
-//   console.log(results);
-
-//   res.json(results);
-// }
-
 async function getBestResults(req, res) {
   const results = await Result.find({ user: req.user._id, inProgress: false }).populate('quiz');
 
