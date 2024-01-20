@@ -43,6 +43,7 @@ export default function App() {
         <Route path="/myquizzes" element={<MyPastQuizPage quizzes={quizzes} user={user} />} />
         <Route path="/start/:character" element={<StartQuizPage chars={characters} quizzes={quizzes}/>} />
         <Route path="/login" element={<AuthPage setUser={setUser} />} />
+        
       </Routes>
     <footer><Footer /></footer>
     </div>
