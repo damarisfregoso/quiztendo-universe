@@ -17,25 +17,23 @@ export default function WelcomePage({ user, characters }) {
       <h2>Choose a character to quiz for!</h2>
       <div className='select-characters'>
       {characters.map((character) => ( 
-  <div className='single-characters' key={character.name}>
-    {user ? (
-      <Link to={`/start/${character.name}`}>
-        <div>
-          <img src={character.image} alt={character.name}/>
-          <h3>{character.name}</h3>
-        </div>
-      </Link>
-    ) : (
-      <div onClick={() => navigate('/login')}>
-        <img src={character.image} alt={character.name}/>
-        <h3>{character.name}</h3>
+      <div className='single-characters' key={character.name}>
+        {user ? (
+          <Link to={`/start/${character.name}`}>
+            <div>
+              <img src={character.image} alt={character.name}/>
+              <h3>{character.name}</h3>
+            </div>
+          </Link>
+        ) : (
+          <div onClick={() => navigate('/login')}>
+            <img src={character.image} alt={character.name}/>
+            <h3>{character.name}</h3>
+          </div>
+        )}
       </div>
-    )}
-  </div>
-))}
-        ))}
+      ))}
       </div>
     </div>
   );
 }
-          // <Link to={`/quiz/${character.name}`} key={character.name}>

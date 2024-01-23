@@ -10,12 +10,11 @@ export default function NavBar({ user, setUser }) {
 
   return (
     <nav className='NavBar'>
-      <Link to="/help">Help</Link>
-      &nbsp; | &nbsp;
-      <Link to="/leaderboard">Leader Board</Link>
-      &nbsp; | &nbsp;
       {user ? 
         <>    
+          <Link to="/help">Help</Link>
+          &nbsp; | &nbsp;
+          <Link to="/leaderboard">Leader Board</Link>
           &nbsp; | &nbsp;
           <Link to="/myquizzes">My Quizzes</Link>
           &nbsp; | &nbsp;
