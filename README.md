@@ -87,4 +87,4 @@ Quiztendo Universe is a fun Super Mario Bros themed quiz game.  Test your knowle
 
 - [ ] Allow users to create quizzes.
 - [ ] Implement a search bar so users find scores and quizzes easier.
-- [ ] Implement a light/dark setting. 
+- [x] Implement a light/dark setting. 

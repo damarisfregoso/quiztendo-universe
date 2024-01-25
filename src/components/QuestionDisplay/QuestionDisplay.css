@@ -9,7 +9,7 @@
 }
 
 .tracking {
-  color: white;
+  color: var(--text_color);
   font-size: 32px;
 }
 
