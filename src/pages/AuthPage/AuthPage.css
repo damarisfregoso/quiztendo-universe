@@ -35,3 +35,19 @@
   border: white solid 3px;
   color: black;
 }
+
+@media (max-width: 480px) {
+  .AuthPage h1 {
+    font-size: 50px;
+    margin: 10px;
+  }
+
+  .AuthPage h2 {
+    font-size: 30px;
+    margin: 0 0 5px 0;
+  }
+
+  .AuthPage button {
+    font-size: 25px;
+  }
+}

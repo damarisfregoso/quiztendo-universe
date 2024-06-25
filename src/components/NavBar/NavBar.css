@@ -32,6 +32,10 @@
   font-family: 'New Super Mario Font U', sans-serif;
   color: rgb(249, 218, 93);
   text-decoration: none;
-
 }
 
+@media (max-width: 480px) {
+  .NavBar a {
+    font-size: 15px;
+  }
+}

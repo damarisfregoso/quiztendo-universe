@@ -85,3 +85,17 @@ footer {
   text-align: center;
   margin-top: auto;
 }
+
+@media (max-width: 480px) {
+  .form-container label {
+    font-size: 25px;
+  }
+
+  .form-container input {
+    font-size: 20px;
+  }
+
+  .form-container {
+    width: 97%;
+  }
+}

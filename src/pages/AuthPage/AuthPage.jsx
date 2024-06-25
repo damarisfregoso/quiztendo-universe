@@ -17,7 +17,7 @@ export default function AuthPage({ setUser }) {
           <SignUpForm setUser={setUser} navigate={navigate}/>
           :
           <LoginForm setUser={setUser} />
-        }
+      }
         <button onClick={() => setShowSignUp(!showSignUp)}>Or click here to {showSignUp ? 'Log In' : 'Sign Up'}</button>
     </main>
   );
