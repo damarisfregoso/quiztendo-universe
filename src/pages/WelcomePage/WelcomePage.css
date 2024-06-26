@@ -48,3 +48,18 @@
 .select-characters a{
   text-decoration: none;
 }
+
+@media (max-width: 480px) {
+  .single-characters {
+    margin: 10px 50px;
+  }
+
+  .WelcomePage h1 {
+    font-size: 50px;
+  }
+
+  .WelcomePage h2 {
+    font-size: 25px;
+    padding: 0 10px;
+  }
+}
