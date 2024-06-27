@@ -66,3 +66,10 @@
 .dark_mode_input:checked + .dark_mode_label svg.moon {
   fill: #fff;
 }
+
+@media (max-width: 480px) {
+  .dark_mode {
+    margin-top: -20px;
+    margin-left: 5px;
+  }
+}
