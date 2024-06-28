@@ -54,13 +54,14 @@
 
   .menu {
     display: none;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
-    background-color: white;
+    /* background-color: white; */
     position: absolute;
     top: 50px; /* Adjust based on your NavBar height */
     left: 0;
     border-top: 1px solid red;
+    border-bottom: 1px solid red;
   }
 
   .menu.open {
