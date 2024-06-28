@@ -66,6 +66,7 @@
 
   .menu.open {
     display: flex;
+    justify-content: space-around;
   }
 
   .NavBar a {
@@ -78,10 +79,13 @@
   .NavBar a {
     font-size: 15px;
   }
-}
 
-@media (max-width: 480px) {
-  .NavBar a {
+  .NavBar span {
     font-size: 15px;
+  }
+
+  .menu.open {
+    display: flex;
+    justify-content: space-around;
   }
 }
