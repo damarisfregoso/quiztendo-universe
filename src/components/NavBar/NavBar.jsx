@@ -30,7 +30,7 @@ export default function NavBar({ user, setUser }) {
           <Link to="/leaderboard">Leader Board</Link>
           <Link to="/myquizzes">My Quizzes</Link>
           <Link to="" onClick={handleLogOut}>Log Out</Link>
-          <Link to='/'><span>Welcome, {user.name} <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Mario_characters.png" alt="mario characters" style={{ height: '20px'}}/></span></Link>
+          <Link to='/'><span>Welcome, {user.name}</span></Link>
         </div>
       )}
       {!user && (

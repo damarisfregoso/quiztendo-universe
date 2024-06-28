@@ -10,7 +10,6 @@
   font-family: 'New Super Mario Font U', sans-serif;
   color: red;
   font-size: 25px;
-  margin-right: 10px; /* Adjust margin between links as needed */
   text-decoration: none;
   -moz-transition: all .3s ease-in;
   -o-transition: all .3s ease-in;
@@ -41,6 +40,8 @@
   border: none;
   color: red;
   cursor: pointer;
+  padding: 0;
+  margin: 0;
 }
 
 .menu {
@@ -58,7 +59,7 @@
     width: 100%;
     /* background-color: white; */
     position: absolute;
-    top: 50px; /* Adjust based on your NavBar height */
+    top: 40px; /* Adjust based on your NavBar height */
     left: 0;
     border-top: 1px solid red;
     border-bottom: 1px solid red;
@@ -73,6 +74,11 @@
     font-size: 20px;
     margin: 10px 0;
   }
+
+  .NavBar span {
+    font-size: 20px;
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -86,6 +92,8 @@
 
   .menu.open {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
   }
+
 }
