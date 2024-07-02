@@ -26,10 +26,10 @@ export default function NavBar({ user, setUser }) {
       )}
       {user && (
         <div className={`menu ${menuOpen ? 'open' : ''}`}>
-          <Link to="/help">Help</Link>
-          <Link to="/leaderboard">Leader Board</Link>
-          <Link to="/myquizzes">My Quizzes</Link>
-          <Link to="" onClick={handleLogOut}>Log Out</Link>
+          <Link to="/help">Help</Link> 
+          <Link to="/leaderboard">Leader Board</Link> 
+          <Link to="/myquizzes">My Quizzes</Link> 
+          <Link to="" onClick={handleLogOut}>Log Out</Link> 
           <Link to='/'><span>Welcome, {user.name}</span></Link>
         </div>
       )}

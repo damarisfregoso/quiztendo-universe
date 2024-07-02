@@ -48,7 +48,41 @@
   display: flex;
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 480px) {
+  .hamburger {
+    display: block;
+  }
+
+  .NavBar a {
+    font-size: 15px;
+  }
+  
+  .NavBar span {
+    font-size: 15px;
+  }
+
+    .menu {
+    display: none;
+    flex-direction: row;
+    width: 100%;
+    /* background-color: white; */
+    position: absolute;
+    top: 40px; /* Adjust based on your NavBar height */
+    left: 0;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
+  }
+  
+  .menu.open {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
   .hamburger {
     display: block;
   }
@@ -78,22 +112,59 @@
   .NavBar span {
     font-size: 20px;
   }
-
 }
 
-@media (max-width: 480px) {
-  .NavBar a {
-    font-size: 15px;
+@media (min-width: 768px) and (max-width: 991px){
+  .hamburger {
+    display: block;
   }
 
-  .NavBar span {
-    font-size: 15px;
+  .menu {
+    display: none;
+    flex-direction: row;
+    width: 100%;
+    /* background-color: white; */
+    position: absolute;
+    top: 40px; /* Adjust based on your NavBar height */
+    left: 0;
+    border-top: 1px solid red;
+    border-bottom: 1px solid red;
   }
-
   .menu.open {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
   }
+}
 
+@media (min-width: 992px) and (max-width: 1199px){
+  .menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .NavBar a {
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1919px){
+  .menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .NavBar a {
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 1920px){
+  .menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .NavBar a {
+    padding: 0 15px;
+  }
 }
