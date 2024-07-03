@@ -1,14 +1,16 @@
 .LeaderBoardPage {
   font-family: 'New Super Mario Font U', sans-serif;
+  padding: 10px;
+  text-align: center; /* Center the content of the page */
 }
 
-.LeaderBoardPage h1{
+.LeaderBoardPage h1 {
   color: red;
-  font-size: 80px;
+  font-size: 40px; /* Adjust font size based on viewport width */
   -webkit-text-stroke: 0.5px rgb(56, 192, 95);
 }
 
-.LeaderBoardPage select{
+.LeaderBoardPage select {
   font-family: 'New Super Mario Font U', sans-serif;
   color: white;
   background-color: rgb(56, 192, 95);
@@ -21,8 +23,10 @@
 
 .LeaderBoardPage table {
   color: rgb(249, 218, 93);
-  font-size: 30px;
+  font-size: 4vw; /* Adjust font size based on viewport width */
   text-align: center;
+  width: 100%;
+  overflow-x: auto;
 }
 
 .custom-table {
@@ -30,36 +34,65 @@
   border-collapse: collapse;
   border: 1px solid #ccc;
   border-radius: 20px;
+  margin: 0 auto; /* Center the table horizontally */
 }
 
 .custom-table th {
   background-color: red;
   border: 2px solid red;
-  padding: 8px;
+  padding: 2vw; /* Adjust padding based on viewport width */
   text-align: center;
   color: black;
 }
 
 .custom-table td {
   border: 2px solid red;
-  padding: 8px;
+  padding: 2vw; /* Adjust padding based on viewport width */
   text-align: center;
   border-radius: 10px;
   -webkit-text-stroke: 0.8px red;
 }
 
 .LeaderBoardPage .click {
-  font-size: 15px;
+  font-size: 4vw; /* Adjust font size based on viewport width */
   text-decoration: none;
   color: red;
-    background: 
-      linear-gradient(red 0 0) no-repeat
-      var(--p, 200%) 100% / 200% var(--p, .08em);
-    transition: .3s var(--t, 0s), background-position .3s calc(.3s - var(--t, 0s));
+  background: 
+    linear-gradient(red 0 0) no-repeat
+    var(--p, 200%) 100% / 200% var(--p, .08em);
+  transition: .3s var(--t, 0s), background-position .3s calc(.3s - var(--t, 0s));
 }
 
 .LeaderBoardPage .click:hover {
-    --p: 100%;
-    --t: .3s;
-    color: black;
+  --p: 100%;
+  --t: .3s;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .LeaderBoardPage h1 {
+    /* font-size: 8vw;  */
+  }
+
+  .LeaderBoardPage table {
+    font-size: 3.5vw; /* Adjust font size for tablets and smaller devices */
+  }
+
+  .custom-table th, .custom-table td {
+    padding: 1.5vw; /* Adjust padding for tablets and smaller devices */
+  }
+}
+
+@media (max-width: 480px) {
+  .LeaderBoardPage h1 {
+    font-size: 10vw; /* Adjust font size for mobile devices */
+  }
+
+  .LeaderBoardPage table {
+    font-size: 3vw; /* Adjust font size for mobile devices */
+  }
+
+  .custom-table th, .custom-table td {
+    padding: 1vw; /* Adjust padding for mobile devices */
+  }
 }
