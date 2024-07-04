@@ -3,7 +3,8 @@
 }
 
 .HelpPage h1{
-  font-size: 70px;
+  font-size: 8vw;
+  padding: 2vh 0 0 0;
   color: rgb(103, 66, 213);
   -webkit-text-stroke: 0.5px rgb(56, 192, 95);
 }

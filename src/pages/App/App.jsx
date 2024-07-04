@@ -13,6 +13,7 @@ import MyPastQuizPage from '../MyPastQuizPage/MyPastQuizPage';
 import AuthPage from '../AuthPage/AuthPage';
 import './App.css';
 import Footer from '../../components/Footer/Footer';
+import ScrollToTop from '../../components/ScrollToTop';
 
 export default function App() {
   const [user, setUser] = useState(getUser());
@@ -34,6 +35,8 @@ export default function App() {
   return (
     <div className="App">
       <NavBar user={user} setUser={setUser} />
+
+      <ScrollToTop />
       <Routes>
         {/* Route components in here */}
         <Route path="/" element={<WelcomePage user={user} characters={characters} quizzes={quizzes}/>} />

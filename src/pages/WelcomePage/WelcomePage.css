@@ -25,6 +25,9 @@
   color: rgb(103, 66, 213);
   font-size: 38px;
 }
+.WelcomePage h3:hover {
+  -webkit-text-stroke: 0.5px rgb(255, 255, 255);
+}
 
 .select-characters {
   display: flex;
