@@ -6,7 +6,8 @@
 
 .LeaderBoardPage h1 {
   color: red;
-  font-size: 6vw;
+  font-size: 65px;
+  padding: 1vh 0;
   -webkit-text-stroke: 0.5px rgb(56, 192, 95);
 }
 
@@ -69,23 +70,9 @@
   color: black;
 }
 
-@media (max-width: 768px) {
-  .LeaderBoardPage h1 {
-    font-size: 10vw; 
-  }
-
-  .LeaderBoardPage table {
-    font-size: 3.5vw; 
-  }
-
-  .custom-table th, .custom-table td {
-    padding: 1.5vw; 
-  }
-}
-
 @media (max-width: 480px) {
   .LeaderBoardPage h1 {
-    font-size: 8vw; 
+    font-size: 40px;
   }
 
   .LeaderBoardPage table {
@@ -94,5 +81,19 @@
 
   .custom-table th, .custom-table td {
     padding: 1vw; /* Adjust padding for mobile devices */
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .LeaderBoardPage h1 {
+    font-size: 40px;
+  }
+
+  .LeaderBoardPage table {
+    font-size: 3.5vw; 
+  }
+
+  .custom-table th, .custom-table td {
+    padding: 1.5vw; 
   }
 }

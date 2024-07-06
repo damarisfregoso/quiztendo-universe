@@ -2,9 +2,9 @@
   font-family: 'New Super Mario Font U', sans-serif;
 }
 
-.HelpPage h1{
-  font-size: 8vw;
-  padding: 2vh 0 0 0;
+.HelpPage h1 {
+  font-size: 65px;
+  padding: 1vh 0;
   color: rgb(103, 66, 213);
   -webkit-text-stroke: 0.5px rgb(56, 192, 95);
 }
@@ -15,6 +15,7 @@
   list-style-position: inside;
   font-size: 40px;
   color: rgb(56, 192, 95);
+  padding: 0;
 }
 
 .HelpPage li {
@@ -52,4 +53,21 @@
     --p: 100%;
     --t: .3s;
     color: black;
+}
+
+@media (max-width: 480px) {
+  .HelpPage h1 {
+    font-size: 40px;
+  }
+
+  .HelpPage ol{
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .HelpPage h1 {
+    font-size: 40px;
+    padding: 2vh 0 0 0;
+  }
 }

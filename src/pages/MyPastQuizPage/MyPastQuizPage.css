@@ -5,7 +5,8 @@
 
 .MyPastQuizPage h1{
   color: red;
-  font-size: 80px;
+  font-size: 65px;
+  padding: 1vh 0;
   -webkit-text-stroke: 0.5px rgb(56, 192, 95);
 }
 
@@ -47,4 +48,21 @@
     --p: 100%;
     --t: .3s;
     color: black;
+}
+
+@media (max-width: 480px) {
+  .MyPastQuizPage h1 {
+    font-size: 40px;
+  }
+
+  .MyPastQuizPage h1 {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .MyPastQuizPage h1 {
+    font-size: 40px;
+    padding: 2vh 0 0 0;
+  }
 }
