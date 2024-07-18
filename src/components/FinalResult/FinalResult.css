@@ -6,6 +6,10 @@
   margin: 0 auto;
   border-radius: 20px;
   border: rgb(103, 66, 213) 2px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .FinalResult h2 {
@@ -46,4 +50,38 @@
   display: flex;
   justify-content: center;
   width: auto;
+}
+
+@media (max-width: 480px) {
+  .FinalResult {
+    width: 90%;
+  }
+  
+  .FinalResult h2 {
+    font-size: 40px;
+  }
+
+  .FinalResult a {
+    font-size: 20px;
+    margin: 5px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+
+}
+
+@media (min-width: 1200px) and (max-width: 1919px){
+
+}
+@media (min-width: 1920px){
+
 }

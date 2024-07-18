@@ -6,6 +6,7 @@
   margin: 0 auto;
   border-radius: 20px;
   border: rgb(103, 66, 213) 2px solid;
+
 }
 
 .tracking {
@@ -17,8 +18,10 @@
   font-size: 30px;
   color: rgb(103, 66, 213);
 }
+
 .QuestionDisplay ul {
   list-style: none;
+  padding: 0;
 }
 
 .QuestionDisplay li {
@@ -29,9 +32,29 @@
   font-size: 30px;
   margin-top: 8px;
 }
+
 .QuestionDisplay li:hover {
   color: rgb(56, 192, 95);
   background-color: white;
   cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  .tracking {
+    font-size: 25px;
+  }
+
+  .QuestionDisplay li {
+    font-size: 25px;
+  }
+
+  .QuestionDisplay h3 {
+    font-size: 27px;
+    color: rgb(103, 66, 213);
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+
 }
 
