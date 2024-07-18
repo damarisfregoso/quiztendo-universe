@@ -55,6 +55,8 @@
 }
 
 @media (min-width: 481px) and (max-width: 767px){
-
+  .tracking {
+    font-size: 25px;
+  }
 }
 

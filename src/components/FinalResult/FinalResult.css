@@ -1,15 +1,11 @@
 .FinalResult {
   background-color: rgb(56, 192, 95);
   padding: 20px;
-  width: 60%;
+  width: 80%;
   height: auto;
   margin: 0 auto;
   border-radius: 20px;
   border: rgb(103, 66, 213) 2px solid;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .FinalResult h2 {
@@ -61,6 +57,11 @@
     font-size: 40px;
   }
 
+  .FinalResult h3 {
+    font-size: 30px;
+    margin: 10;
+  }
+
   .FinalResult a {
     font-size: 20px;
     margin: 5px;
@@ -68,20 +69,21 @@
 }
 
 @media (min-width: 481px) and (max-width: 767px){
+  .FinalResult {
+    width: 90%;
+  }
+  
+  .FinalResult h2 {
+    font-size: 40px;
+  }
 
-}
+  .FinalResult h3 {
+    font-size: 30px;
+    margin: 10;
+  }
 
-@media (min-width: 768px) and (max-width: 991px){
-
-}
-
-@media (min-width: 992px) and (max-width: 1199px){
-
-}
-
-@media (min-width: 1200px) and (max-width: 1919px){
-
-}
-@media (min-width: 1920px){
-
+  .FinalResult a {
+    font-size: 20px;
+    margin: 5px;
+  }
 }
